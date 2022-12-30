@@ -16,4 +16,5 @@ public class Utils extends base{
 		ResultSet result = statement.executeQuery(query);
 		return result;
 	}
+	
 }

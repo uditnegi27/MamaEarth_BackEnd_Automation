@@ -5,8 +5,8 @@
     <classes>
       <class name="com.TestCase.FiestTestCases">
         <methods>
-          <include name="dataBase"/>
           <include name="setUp"/>
+          <include name="verify_OTP_with_valid_credentials_APITEST"/>
         </methods>
       </class> <!-- com.TestCase.FiestTestCases -->
     </classes>

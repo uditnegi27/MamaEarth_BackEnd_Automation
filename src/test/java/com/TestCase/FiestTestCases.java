@@ -1,10 +1,13 @@
 package com.TestCase;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import org.json.simple.JSONObject;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
+import java.io.File;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -15,6 +18,8 @@ import org.testng.annotations.Test;
 import com.Base.base;
 import com.Utils.Utils;
 
+import io.restassured.module.jsv.JsonSchemaValidator;
+
 public class FiestTestCases extends base{
 		
 	public int averge_time_response;
@@ -23,6 +28,7 @@ public class FiestTestCases extends base{
 	
 	public Utils ut;
 	
+	@BeforeMethod
 	@BeforeClass
 	public void setUp() {
 		
@@ -73,8 +79,12 @@ public class FiestTestCases extends base{
 				.post("/auth/otp")
 				.then()
 				.statusCode(200)
+				.assertThat()
+				.body(JsonSchemaValidator.
+						matchesJsonSchema(new File("/Users/honasa/Desktop/SeleniumSeesion/APIAutomation/src/main/java/com/Parameterize/LoginUserSchema.json")))
 				.extract()
 				.path("token.accessToken");
+		
 		
 		Assert.assertNotNull(token);
 	}
@@ -96,9 +106,7 @@ public class FiestTestCases extends base{
 		.when()
 		.get("/categories")
 		.then()
-		.statusCode(200)
-		.log()
-		.all();
+		.statusCode(200);
 	}
 	
 	@Test

@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "token": {
+      "type": "object",
+      "properties": {
+        "tokenType": {
+          "type": "string"
+        },
+        "accessToken": {
+          "type": "string"
+        },
+        "refreshToken": {
+          "type": "string"
+        },
+        "expiresIn": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "tokenType",
+        "accessToken",
+        "refreshToken",
+        "expiresIn"
+      ]
+    },
+    "user": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "addresses": {
+          "type": "array",
+          "items": {}
+        },
+        "customer_id": {
+          "type": "integer"
+        },
+        "customerGroupId": {
+          "type": "integer"
+        },
+        "customerGroupCode": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "email",
+        "role",
+        "firstName",
+        "lastName",
+        "phone",
+        "addresses",
+        "customer_id",
+        "customerGroupId",
+        "customerGroupCode"
+      ]
+    },
+    "cart": {
+      "type": "object",
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {}
+        },
+        "cartId": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "items",
+        "cartId"
+      ]
+    }
+  },
+  "required": [
+    "token",
+    "user",
+    "cart"
+  ]
+}

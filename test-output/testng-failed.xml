@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestCase.FiestTestCases">
+      <class name="com.TestCase.UserAddress_APITestCases">
         <methods>
-          <include name="setUp"/>
-          <include name="verify_OTP_with_valid_credentials_APITEST"/>
+          <include name="Test_UserAddress_DeleteExistingAddress"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.TestCase.FiestTestCases -->
+      </class> <!-- com.TestCase.UserAddress_APITestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

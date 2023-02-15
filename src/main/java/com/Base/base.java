@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+
 public class base {
 	
 	public static Properties prop;
@@ -23,6 +24,21 @@ public class base {
 		}
 	}
 	
-//	
+	/*** Environment can be "Production", "UAT" or "DEV"   ***/
+	public static String setupURI(String environment) {
+		String env = environment.toLowerCase();
+		if(env.equals("production")) {
+			return prop.getProperty("Production_URI");
+		}
+		else if(env.equals("uat")) {
+			return prop.getProperty("Production_URI");
+		}
+		else if(env.equals("dev")) {
+			return prop.getProperty("Production_URI");
+		}
+		else {
+			return "**  Environment is not present is data...";
+		}
+	}
 
 }

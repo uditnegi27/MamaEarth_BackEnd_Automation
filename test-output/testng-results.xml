@@ -1,65 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-27T13:36:27 IST" name="Suite" finished-at="2022-12-27T13:36:35 IST" duration-ms="8243">
+  <suite started-at="2023-02-15T16:37:51 IST" name="Default suite" finished-at="2023-02-15T16:37:55 IST" duration-ms="4448">
     <groups>
     </groups>
-    <test started-at="2022-12-27T13:36:27 IST" name="Test" finished-at="2022-12-27T13:36:35 IST" duration-ms="8243">
-      <class name="com.TestCase.FiestTestCases">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.TestCase.FiestTestCases@2f177a4b]" started-at="2022-12-27T13:36:27 IST" name="setUp" finished-at="2022-12-27T13:36:29 IST" duration-ms="2088" status="PASS">
+    <test started-at="2023-02-15T16:37:51 IST" name="Default test" finished-at="2023-02-15T16:37:55 IST" duration-ms="4448">
+      <class name="com.TestCase.UserAddress_APITestCases">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.TestCase.UserAddress_APITestCases@3d121db3]" started-at="2023-02-15T16:37:51 IST" name="setup" finished-at="2023-02-15T16:37:54 IST" duration-ms="2978" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.TestCase.FiestTestCases@2f177a4b]" started-at="2022-12-27T13:36:29 IST" name="setUp" finished-at="2022-12-27T13:36:29 IST" duration-ms="387" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="getUserAddress()[pri:1, instance:com.TestCase.UserAddress_APITestCases@3d121db3]" started-at="2023-02-15T16:37:54 IST" name="getUserAddress" finished-at="2023-02-15T16:37:54 IST" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="Check_entityId_of_the_user()[pri:0, instance:com.TestCase.FiestTestCases@2f177a4b]" started-at="2022-12-27T13:36:29 IST" name="Check_entityId_of_the_user" finished-at="2022-12-27T13:36:30 IST" duration-ms="731" status="PASS">
+        </test-method> <!-- getUserAddress -->
+        <test-method signature="Test_UserAddress_DeleteExistingAddress()[pri:10, instance:com.TestCase.UserAddress_APITestCases@3d121db3]" started-at="2023-02-15T16:37:54 IST" name="Test_UserAddress_DeleteExistingAddress" finished-at="2023-02-15T16:37:55 IST" duration-ms="1257" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Check_entityId_of_the_user -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.TestCase.FiestTestCases@2f177a4b]" started-at="2022-12-27T13:36:30 IST" name="setUp" finished-at="2022-12-27T13:36:30 IST" duration-ms="437" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="dataBase()[pri:0, instance:com.TestCase.FiestTestCases@2f177a4b]" started-at="2022-12-27T13:36:30 IST" name="dataBase" finished-at="2022-12-27T13:36:31 IST" duration-ms="460" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataBase -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.TestCase.FiestTestCases@2f177a4b]" started-at="2022-12-27T13:36:31 IST" name="setUp" finished-at="2022-12-27T13:36:31 IST" duration-ms="413" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="firstTest()[pri:0, instance:com.TestCase.FiestTestCases@2f177a4b]" started-at="2022-12-27T13:36:31 IST" name="firstTest" finished-at="2022-12-27T13:36:32 IST" duration-ms="356" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- firstTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.TestCase.FiestTestCases@2f177a4b]" started-at="2022-12-27T13:36:32 IST" name="setUp" finished-at="2022-12-27T13:36:32 IST" duration-ms="392" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="generate_OTP_APITEST()[pri:0, instance:com.TestCase.FiestTestCases@2f177a4b]" started-at="2022-12-27T13:36:32 IST" name="generate_OTP_APITEST" finished-at="2022-12-27T13:36:32 IST" duration-ms="300" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generate_OTP_APITEST -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.TestCase.FiestTestCases@2f177a4b]" started-at="2022-12-27T13:36:32 IST" name="setUp" finished-at="2022-12-27T13:36:33 IST" duration-ms="366" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verify_OTP_with_valid_credentials_APITEST()[pri:0, instance:com.TestCase.FiestTestCases@2f177a4b]" started-at="2022-12-27T13:36:33 IST" name="verify_OTP_with_valid_credentials_APITEST" finished-at="2022-12-27T13:36:34 IST" duration-ms="1523" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_OTP_with_valid_credentials_APITEST -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.TestCase.FiestTestCases@2f177a4b]" started-at="2022-12-27T13:36:34 IST" name="setUp" finished-at="2022-12-27T13:36:35 IST" duration-ms="376" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verify_the_categories_APITEST()[pri:0, instance:com.TestCase.FiestTestCases@2f177a4b]" started-at="2022-12-27T13:36:35 IST" name="verify_the_categories_APITEST" finished-at="2022-12-27T13:36:35 IST" duration-ms="378" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_the_categories_APITEST -->
-      </class> <!-- com.TestCase.FiestTestCases -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- Test_UserAddress_DeleteExistingAddress -->
+      </class> <!-- com.TestCase.UserAddress_APITestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
